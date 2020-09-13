@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <div class="container">This is my Container open console in chrome where we created jsonobj and converted json obj to strings and vice versa </div>
+    <script>
+        let jsonObj = {
+            name: "modi",
+            channel: "ad",
+            friend: "nik",
+            food: "magi",
+
+        }
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj) //object to string converson
+        console.log(myJsonStr)
+        myJsonStr = myJsonStr.replace('modi', 'mohammad')
+        console.log(myJsonStr);
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj)
+    </script>
+</body>
+
+</html>
